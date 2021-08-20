@@ -9,13 +9,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(palmerpenguins)
+library(pastagiraffe)
 ```
 
 
 ```{r}
 ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
   geom_violin(aes(fill = species)) +
-  theme_minimal() +
+  theme_blue_white() +
   labs(x = "Species",
        y = "Flipper Length (mm)",
        title = "Penguins are really cool!")
