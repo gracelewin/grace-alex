@@ -17,6 +17,7 @@ ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
   geom_violin(aes(fill = species)) +
   theme_minimal() +
   labs(x = "Species",
-       y = "Flipper Length (mm)")
+       y = "Flipper Length (mm)",
+       title = "Penguins are really cool!")
 ```
 
